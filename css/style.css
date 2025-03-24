@@ -1,0 +1,24 @@
+/*ini css*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+.judul-utama,
+.paragraf.utama {
+  text-align: center;
+}
+.judul-utama {
+  text-align: center;
+  background-color: orange;
+  padding: 10px;
+  border-radius: 5px;
+}
+.persegi-panjang {
+  width: 590px; /* Lebar persegi panjang */
+  height: 700px; /* Tinggi persegi panjang */
+  border: 3px solid black; /* Warna dan ketebalan garis tepi */
+  margin: 20px auto; /* Mengatur margin agar berada di tengah */
+  border-radius: 15px; /* Membuat sudut tidak tajam */
+}
