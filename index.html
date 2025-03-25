@@ -1,28 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>tugas revou</title>
-       <!--ini css eksternal-->
-      <link rel="stylesheet" href="css/style.css">
-      <!--ini javascript eksternal-->
-      <script src="js/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas revoU</title>
+    <!--css eksternal-->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-       <!--ini header-->
-  <header> 
-    <h1 class="judul-utama">KATIK (kalkulator matematik)</h1>
-  </header>
-       <!--ini main content-->
-  <main>
-    <p class="paragraf utama">KATIK adalah aplikasi kalkulator matematika yang dapat membantu anda dalam menghitung berbagai macam perhitungan matematika.<br>
-      Aplikasi ini sangat mudah digunakan dan dapat diakses dimana saja dan kapan saja. </p>
-  </p>
-  <div class="persegi-panjang"></div>
-</main>
-       <!--ini footer-->
-<footer></footer>
- 
+    <div class="container">
+        <h1><u>KATIK</u><br>
+        kakulator matematis</h1>
+        
+        <div class="shape-selector">
+            <button onclick="showSquare()">Persegi</button>
+            <button onclick="showRectangle()">Persegi Panjang</button>
+        </div>
+
+        <!-- Kalkulator Persegi -->
+        <div id="square-calc" class="hidden">
+            <div class="calculator">
+                <h3>Persegi</h3>
+                <input type="number" id="sisi" placeholder="Masukkan sisi">
+                <div class="button-group">
+                    <button onclick="hitungLuasPersegi()">Hitung Luas</button>
+                    <button onclick="hitungKelilingPersegi()">Hitung Keliling</button>
+                </div>
+                <div id="hasil-persegi" class="result"></div>
+            </div>
+        </div>
+
+        <!-- Kalkulator Persegi Panjang -->
+        <div id="rectangle-calc" class="hidden">
+            <div class="calculator">
+                <h3>Persegi Panjang</h3>
+                <input type="number" id="panjang" placeholder="Masukkan panjang">
+                <input type="number" id="lebar" placeholder="Masukkan lebar">
+                <div class="button-group">
+                    <button onclick="hitungLuasPersegiPanjang()">Hitung Luas</button>
+                    <button onclick="hitungKelilingPersegiPanjang()">Hitung Keliling</button>
+                </div>
+                <div id="hasil-persegipanjang" class="result"></div>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER-->
+<footer>
+    <script src="js/script.js"></script>
+</footer>
+   
 </body>
 </html>
