@@ -14,24 +14,36 @@ body {
 }
 
 .container {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  width: 300px;
+  width: 350px;
+  max-height: 80vh; /* buat Membatasi tinggi maksimum dari tinggi viewport */
+  overflow-y: auto; /* biar bisa di scroll*/
 }
 
-.judul{
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: italic;  
-    color: #ff6b00;
-    text-align: center;
+/*di bantu oleh AI*/
+.judul {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;  
+  color: #00bbff;
+  text-align: center;
+  padding: 1rem; /* Memberikan ruang di dalam kotak */
+  border: 2px solid #00bbff; /* Menambahkan garis tepi */
+  border-radius: 10px; /* Membuat sudut kotak melengkung */
+  display: block; /* Membuat kotak memenuhi lebar elemen induk */
+  width: 100%; /* Memastikan kotak memenuhi lebar elemen induk */
+  background-color: #f0f8ff; /* Warna latar belakang kotak */
+  margin-bottom: 1rem; /* Memberikan jarak ke elemen di bawahnya */
+  box-sizing: border-box; /* Memastikan padding dan border dihitung dalam lebar kotak */
 }
 
 .subjudul{
-  color: #ff6b00;
-  text-align: center;
+  color: #90e0fd;
+  text-align: center
+  ;
 }
 
 .shape-selector {
@@ -43,7 +55,7 @@ body {
 .shape-selector button {
   flex: 1;
   padding: 0.5rem;
-  background-color: #ff6b00;
+  background-color: #00bbff;
   border: none;
   color: white;
   border-radius: 5px;
@@ -70,23 +82,23 @@ input {
 button {
   flex: 1;
   padding: 0.5rem;
-  background-color: #ff944d;
+  background-color: #00bbff;
   border: none;
-  color: white;
+  color: rgb(255, 255, 255);
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #ff6b00;
+  background-color: rgb(241, 11, 241);
 }
 
 .result {
   padding: 1rem;
-  background-color: #fff3e6;
+  background-color: #c2f5ff;
   border-radius: 5px;
-  color: #ff6b00;
+  color: rgb(241, 11, 241);
   text-align: center;
 }
 

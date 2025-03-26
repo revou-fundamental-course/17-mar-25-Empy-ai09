@@ -1,4 +1,4 @@
-// Menu Tab Switching
+
 function showSquare() {
   document.getElementById('square-calc').classList.remove('hidden');
   document.getElementById('rectangle-calc').classList.add('hidden');
@@ -50,5 +50,5 @@ function showError(elementId) {
   document.getElementById(elementId).textContent = 'Input tidak valid!';
 }
 
-// Tampilkan kalkulator persegi secara default saat pertama kali load
+// nampilin kalkulator persegi secara default pas pertama kali load
 showSquare();
