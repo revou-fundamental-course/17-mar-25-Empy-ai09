@@ -10,14 +10,14 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  background-color: #f0f0f0;
+  background-color: rgb(190, 252, 252);
 }
 
 .container {
   background-color: rgb(255, 255, 255);
   padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 17px;
+  box-shadow: 0 0 19px rgb(241, 11, 241);
   width: 350px;
   max-height: 80vh; /* buat Membatasi tinggi maksimum dari tinggi viewport */
   overflow-y: auto; /* biar bisa di scroll*/
